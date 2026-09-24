@@ -112,9 +112,13 @@ button:focus-visible {
 }
 
 .btn {
-  background: #fff;
-  color: var(--ink);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 10px 28px rgba(47, 91, 255, 0.35);
+}
+
+.btn:hover {
+  background: #4a70ff;
 }
 
 .btn:hover,
@@ -291,14 +295,15 @@ h1 span {
 
 .mail {
   margin-top: 8px;
-  background: #fff;
-  color: var(--ink);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--hero-ink);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 18px;
   padding: 16px;
 }
 
 .mail .from {
-  color: var(--muted);
+  color: rgba(244, 247, 251, 0.5);
   font-size: 12px;
 }
 
@@ -312,24 +317,26 @@ h1 span {
 
 .mail p {
   margin: 0;
-  color: #526074;
+  color: rgba(244, 247, 251, 0.62);
   font-size: 13px;
 }
 
 .approve {
   margin-top: 14px;
-  padding: 12px 14px;
-  border-radius: 12px;
-  background: #f3f5f9;
+  padding: 10px 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0;
+  background: transparent;
   display: flex;
   justify-content: space-between;
   gap: 12px;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
+  color: rgba(244, 247, 251, 0.55);
 }
 
 .approve span:last-child {
-  color: var(--accent);
+  color: #9eb0ff;
 }
 
 .proof-strip {
@@ -337,19 +344,21 @@ h1 span {
   z-index: 2;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
+  gap: 12px;
   margin: -68px auto 20px;
-  background: var(--line);
-  border: 1px solid var(--line);
-  border-radius: 24px;
-  overflow: hidden;
-  box-shadow: var(--shadow);
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  overflow: visible;
+  box-shadow: none;
 }
 
 .proof {
   padding: 22px 24px;
-  background: var(--card);
-  color: var(--ink);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--hero-ink);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
 }
 
 .proof strong {
@@ -360,7 +369,7 @@ h1 span {
 
 .proof p {
   margin: 6px 0 0;
-  color: var(--muted);
+  color: rgba(244, 247, 251, 0.62);
   font-size: 14px;
 }
 
@@ -402,12 +411,12 @@ h2 {
 }
 
 .card {
-  background: var(--card);
-  color: var(--ink);
-  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--hero-ink);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius);
   padding: 26px;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.7) inset;
+  box-shadow: none;
   transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -421,8 +430,8 @@ h2 {
   display: inline-flex;
   padding: 6px 9px;
   border-radius: 999px;
-  background: var(--accent-soft);
-  color: #1d3ed8;
+  background: rgba(47, 91, 255, 0.16);
+  color: #c5d0ff;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -438,7 +447,7 @@ h2 {
 
 .card p {
   margin: 0;
-  color: var(--muted);
+  color: rgba(244, 247, 251, 0.62);
 }
 
 .flow {
@@ -447,7 +456,7 @@ h2 {
   gap: 12px;
   margin-top: 22px;
   padding-top: 18px;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .step {
@@ -463,8 +472,8 @@ h2 {
   border-radius: 9px;
   display: grid;
   place-items: center;
-  background: #eef1f6;
-  color: #526074;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(244, 247, 251, 0.8);
   font-size: 12px;
   font-weight: 700;
   flex: none;
@@ -556,19 +565,19 @@ h2 {
   gap: 12px;
   padding: 18px;
   border-radius: 28px;
-  background: #eef2f7;
-  color: var(--ink);
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--hero-ink);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: none;
 }
 
 .screen .screen-top {
-  color: var(--ink);
+  color: var(--hero-ink);
   padding-top: 2px;
 }
 
 .screen .dots i {
-  background: #d5d9e1;
+  background: rgba(255, 255, 255, 0.28);
 }
 
 .screen .mail {
