@@ -378,11 +378,12 @@ section {
 }
 
 .section-head {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 14px;
+  display: block;
   margin-bottom: 28px;
+}
+
+.section-head h2 {
+  max-width: 720px;
 }
 
 .kicker {
@@ -399,8 +400,9 @@ h2 {
 }
 
 .section-head p {
+  display: block;
   max-width: 640px;
-  margin: 0;
+  margin: 14px 0 0;
   color: rgba(244, 247, 251, 0.68);
 }
 
@@ -635,7 +637,6 @@ footer {
   .proof-strip,
   .grid,
   .case,
-  .section-head,
   .cta {
     grid-template-columns: 1fr;
     display: grid;
@@ -651,10 +652,6 @@ footer {
 
   .proof-strip {
     margin-top: -48px;
-  }
-
-  .section-head p {
-    margin-top: 0;
   }
 
   .metrics {
